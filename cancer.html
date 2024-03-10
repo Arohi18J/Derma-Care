@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skin Disease Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            margin: 0;
+        }
+
+        h2 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            padding: 10px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        p {
+            margin-top: 10px;
+        }
+
+        .disease-info {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Skin Cancer Disease Prediction</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    {% if predicted_class_cancer %}
+        <h2>Predicted Skin Disease Class:</h2>
+        <p>{{ predicted_class_cancer }}</p>
+        <!-- Display disease information here -->
+        <div class="disease-info-cancer">
+            <h2>Disease Information(Description)</h2>
+            <p>{{ disease_description_cancer }}</p> <!-- Updated this line -->
+
+        </div>
+{% endif %}
+    {% if error %}
+
+        <p>{{ error }}</p>
+    {% endif %}
+<<a class='nav-link', href="{{ url_for('index')}}">Go Back To Home</a>
+
+</body>
+</html>

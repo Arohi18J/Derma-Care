@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Contact</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+   <!-- Responsive-->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css') }}">
+   <!-- fevicon -->
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/jquery.mCustomScrollbar.min.css') }}">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="logo"><a href="{{ url_for('index')}}"><img src= "{{ url_for('static', filename='images/golo.png')}}",
+                     width="120" ,height="162"></a></div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                     <a class='nav-link', href="{{ url_for('index')}}">Home</a>
+                  </li>
+
+                  <li class="nav-item">
+                     <a class='nav-link', href="{{ url_for('medicine')}}">Medicine</a>
+                  </li>
+
+                   <li class="nav-item">
+                  <a class='nav-link', href="{{ url_for('client')}}">Trends in Derma-tech</a>
+               </li>
+
+                  <li class="nav-item">
+                     <a class='nav-link', href="{{ url_for('contact')}}">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link", href="#"><img src="{{ url_for('static', filename='images/search-icon.png') }}"></a>
+   
+                  </li>
+               </ul>
+            </div>
+         </nav>
+      </div>
+      <!-- header section end -->
+      <!-- contact section start -->
+      <div class="contact_section layout_padding margin_90">
+         <div class="container">
+            <h1 class="contact_taital">What we do</h1>
+            <div class="news_section_2">
+               <div class="row">
+                  <div class="col-md-6">
+                     <div class="icon_main">
+                     <div class="icon_7"><img src="{{ url_for('static', filename='images/icon-7.png') }}"></div>
+                     <h4 class="diabetes_text">Diabetes and obesity Counselling </h4>
+                  </div>
+                  <div class="icon_main">
+                     <div class="icon_7"><img src="{{ url_for('static', filename='images/icon-5.png') }}"></div>
+                     <h4 class="diabetes_text">Obstetrics and Gynsecology</h4>
+                  </div>
+                  <div class="icon_main">
+                     <div class="icon_7"><img src="{{ url_for('static', filename='images/icon-6.png') }}"></div>
+                     <h4 class="diabetes_text">Surgical and medical Oncology</h4>
+                  </div>
+               </div>
+                  <div class="col-md-6">
+                     <div class="contact_box">
+                        <h1 class="book_text">Book Appoinment</h1>
+                        <input type="text" class="Email_text" placeholder="Name" name="Name">
+                        <input type="text" class="Email_text" placeholder="Name" name="Name">
+                        <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="Massage"></textarea>
+                        <div class="send_bt"><a href="#">SEND</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-sm-6">
+                  <div class="logo"><a href="{{ url_for('index')}}"><img src= "{{ url_for('static', filename='images/golo.png')}}",
+                     width="120" ,height="162"></a></div>
+                  <h1 class="adderss_text">Contact Us</h1>
+                  <div class="map_icon"><img src="{{ url_for('static', filename='images/map-icon.png') }}"><span class="paddlin_left_0">Mumbai, India</span></div>
+                  <div class="map_icon"><img src="{{ url_for('static', filename='images/call-icon.png') }}"><span class="paddlin_left_0">+xxxxxxxxxx</span></div>
+                  <div class="map_icon"><img src="{{ url_for('static', filename='images/mail-icon.png') }}"><span class="paddlin_left_0">code-samiti@gmail.com</span></div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="adderss_text">Doctors</h1>
+                  <div class="hiphop_text_1">The total number of doctors(dermatologist) for skin diseases are less</div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="adderss_text">Useful Links</h1>
+                  <div class="Useful_text"><a href="https://google.com" style="color:lightblue;">google</a></div>
+                  <div class="Useful_text"><a href="https://www.niams.nih.gov/health-topics/all-diseases" style="color:lightblue;">common skin diseases</a></div>
+                  <div class="Useful_text"><a href="https://www.narayanahealth.org/blog/medications-for-skin-conditions/" style="color:lightblue;">medicine information</a></div>
+               </div>
+               <div class="col-lg-3 col-sm-6">
+                  <h1 class="adderss_text">Our social media links</h1>
+                  
+                  <div class="social_icon">
+                     <ul>
+                        <img src="{{ url_for('static', filename='images/fb-icon.png') }}">
+                        <img src="{{ url_for('static', filename='images/twitter-icon.png') }}">
+                        <img src="{{ url_for('static', filename='images/linkedin-icon.png') }}">
+                        <img src="{{ url_for('static', filename='images/instagram-icon.png') }}">
+                     
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+           <p class="copyright_text">Designed my Nocturnal Ninjas Coders(Code-Samiti)</p>
+         </div>
+      </div>
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+   
+      <script type="text/javascript" src="js/jquery.min.js"></script>
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+      <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+   
+      <script type="text/javascript" src="js/plugin.js"></script>
+      <script type="text/javascript" src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+   
+      <script type="text/javascript" src="js/custom.js"></script>
+      <script type="text/javascript" src="js/owl.carousel.js"></script>
+   
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+   
+   </html>
